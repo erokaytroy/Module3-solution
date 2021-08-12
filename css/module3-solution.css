@@ -1,0 +1,162 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: whitesmoke;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER SECTION */
+#header-nav {
+  background-color: grey;
+  border-radius: 0;
+  border: 0;
+}
+
+/** nav bar styling */
+.navbar-brand {
+padding-top: 25px;
+padding-left: 0;
+}
+
+.navbar-brand h1 { /* Company Name */
+font-family: 'lora', serif;
+color: black;
+font-size: 1.5em;
+text-transform: uppercase;
+font-weight: bold;
+text-shadow: 1px 1px 1px #222;
+margin-top: 0;
+margin-bottom: 0;
+line-height: .75;
+}
+h2 {
+  text-align: center;
+  font-size: 26px;
+  color: black;
+}
+h3 {
+  text-align: center;
+  color: black;
+  padding-bottom: 15px;
+}
+.section {
+  background-color: grey;
+  color: black;
+}
+
+/** this will remove the underlines on the header which come by default */
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+/** here i will put the styling code for the navigation bar on the right*/
+
+#nav-list {
+  margin-top: 10px;
+}
+
+#nav-list a {
+  /** give a maroon color*/
+  color: #951C49;
+  text-align: center;
+}
+
+#nav-list a:hover {/*give background color when moving the mouse over the list*/
+  background-color: #E7E7E7;
+}
+
+#nav-list a span { /* increase the font size by 1.8 */
+  font-size: 1.8em;
+}
+ 
+ 
+/** here i put the styles for the button that opens up and closes the collapse mobile menu*/
+
+/**first we are going to change the color of the borders of the buttons*/
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+
+/** i put the code to avoid the Kosher certified to go outside the navbar header*/
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  /*to make the text smaller in the mobile view we use the code below*/
+  margin-top: -30px;
+}
+
+
+
+
+
+
+/**Fixing Navbar Layout, Text and Dropdown Menus lecture 33 week 3*/
+/** here we add media queries to handle the break up points on defferent devices*/
+
+/************* Large devices only **********/
+@media (min-width: 1200px) { /* HERE am going to load images using jumbotron in large device view*/
+
+}
+
+/************* Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+/************* Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) { /* put an image using a jumbotron on a small device  */
+
+
+}
+
+/************* Extra small devices only **********/
+@media (max-width: 767px) {
+/*Header  */
+.navbar-brand {
+  padding-top: 10px;
+  height: 80px;
+}
+.navbar-brand h1 { /* Reataurant name */
+padding-top: 10px;
+font-size: 5vw; /* 1vw = 1% of viewport with */
+}
+.navbar-brand p { /* Kosher cert */
+  font-size: .6em;
+  margin-top: 12px;
+}
+.navbar-brand p img {
+  height: 20px;
+}
+}
+/* Styling the Drop down Menu*/
+#collapsable-nav a { /* collapsed nav menu glyph */
+font-size: 1.2em;
+}
+
+#collapsable-nav a span {
+  font-size: 1em;
+  margin-right: 5px;/* this will help to put space btn the icon and the text menu */
+}
+
+
+
+/**here i define a media query for extra small devices coz the images become big for them*/
+
+/****************super extra small devices only: -) (e.g., iphone 4)************/
+@media (max-width: 479px) {
+  /* Header */
+  /*here we change the size of the heading in extra small devices*/
+
+  .navbar-brand h1{/* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+   /* End Header */
+
+}
+
+
+
+
+
